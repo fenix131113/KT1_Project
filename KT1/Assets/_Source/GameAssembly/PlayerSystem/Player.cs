@@ -18,7 +18,7 @@ namespace GameAssembly.PlayerSystem
 
         private void HoldJump()
         {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Force);
+            rb.AddForce(Vector2.up * (jumpForce * Time.deltaTime), ForceMode2D.Force);
         }
 
         private void Death() => _gameRestart.RestartGame();
