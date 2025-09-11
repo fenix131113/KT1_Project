@@ -2,7 +2,7 @@
 
 namespace GameAssembly.ScoresSystem
 {
-    public class Scores
+    public class Score
     {
         public int ScoresCount { get; private set; }
 

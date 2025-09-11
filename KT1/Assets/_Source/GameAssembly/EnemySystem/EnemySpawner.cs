@@ -1,4 +1,6 @@
 ﻿using System.Collections;
+using GameAssembly.Core;
+using GameAssembly.Level.Data;
 using GameAssembly.PlayerSystem;
 using UnityEngine;
 using VContainer;
@@ -8,20 +10,16 @@ namespace GameAssembly.EnemySystem
     public class EnemySpawner : MonoBehaviour
     {
         [SerializeField] private GameObject enemyPrefab;
-        [SerializeField] private float minY;
-        [SerializeField] private float maxY;
-        [SerializeField] private float minTimeBetweenSpawn;
-        [SerializeField] private float maxTimeBetweenSpawn;
-        [SerializeField] private float spawnDistanceFromPlayer;
+        [SerializeField] private SpawnSettings spawnSettings;
 
-        [Inject] private Player _player;
+        [Inject] private IPositionGetter _playerPosition;
 
         public void StartSpawn() => StartCoroutine(SpawnRoutine());
 
         private void SpawnEnemy()
         {
             Instantiate(enemyPrefab,
-                new Vector3(_player.transform.position.x + spawnDistanceFromPlayer, Random.Range(minY, maxY), 0),
+                new Vector3(_playerPosition.GetPosition().x + spawnSettings.SpawnDistanceFromPlayer, Random.Range(spawnSettings.MinY, spawnSettings.MaxY), 0),
                 Quaternion.identity);
         }
 
@@ -30,7 +28,7 @@ namespace GameAssembly.EnemySystem
         {
             while (true)
             {
-                yield return new WaitForSeconds(Random.Range(minTimeBetweenSpawn, maxTimeBetweenSpawn));
+                yield return new WaitForSeconds(Random.Range(spawnSettings.MinTimeBetweenSpawn, spawnSettings.MaxTimeBetweenSpawn));
 
                 SpawnEnemy();
             }

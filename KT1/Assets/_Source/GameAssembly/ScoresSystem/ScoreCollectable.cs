@@ -1,4 +1,4 @@
-﻿using System;
+﻿using GameAssembly.Core.Data;
 using GameAssembly.Level;
 using GameAssembly.Services;
 using UnityEngine;
@@ -7,14 +7,18 @@ namespace GameAssembly.ScoresSystem
 {
     public class ScoreCollectable : MonoBehaviour
     {
-        [SerializeField] private LayerMask playerLayer;
         [SerializeField] private MovingObject movingObject;
         [SerializeField] private float followSpeed;
 
-        private Scores _scores;
+        private Score _score;
+        private LayersDataSO _layersDataSO;
         private Transform _followTarget;
         
-        public void Init(Scores scores) => _scores = scores;
+        public void Init(Score score, LayersDataSO layersDataSO)
+        {
+            _score = score;
+            _layersDataSO = layersDataSO;
+        }
 
         private void Update()
         {
@@ -26,7 +30,7 @@ namespace GameAssembly.ScoresSystem
 
         private void Collect()
         {
-            _scores.AddScore();
+            _score.AddScore();
             Destroy(gameObject);
         }
 
@@ -38,7 +42,7 @@ namespace GameAssembly.ScoresSystem
         
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if(!LayerService.CheckLayersEquality(other.gameObject.layer, playerLayer))
+            if(!LayerService.CheckLayersEquality(other.gameObject.layer, _layersDataSO.PlayerLayer))
                 return;
             
             Collect();

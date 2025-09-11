@@ -939,9 +939,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 831431114}
   jumpForce: 1000
-  deadByLayer:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!96 &831431113
 TrailRenderer:
   serializedVersion: 3
@@ -1233,6 +1230,7 @@ MonoBehaviour:
   autoInjectGameObjects:
   - {fileID: 1757309633}
   - {fileID: 1761553449}
+  layersDataSO: {fileID: 11400000, guid: 76233fa3efdcbde4184e2baf8b2b80c1, type: 2}
 --- !u!114 &1757309636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1260,6 +1258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scorePrefab: {fileID: 4409254207063929092, guid: 3c15f9c337b85bc44b72faa7b3ffcbbe, type: 3}
+  spawnSettings: {fileID: 11400000, guid: 283d7cd04d40ee247ad91da0e078f8ad, type: 2}
   minY: -3.2
   maxY: 3.2
   minTimeBetweenSpawn: 3
@@ -1278,6 +1277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 9029614462322052743, guid: 54df0ce8a2fc4624fb832d9e0300007a, type: 3}
+  spawnSettings: {fileID: 11400000, guid: 33d966a0b483ceb41a91eb070c9a5454, type: 2}
   minY: -1.5
   maxY: 1.5
   minTimeBetweenSpawn: 2

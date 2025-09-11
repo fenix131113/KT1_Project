@@ -8,7 +8,7 @@ namespace GameAssembly.ScoresSystem
     {
         [SerializeField] private TMP_Text scoreText;
         
-        [Inject] private Scores _scores;
+        [Inject] private Score _score;
 
         private void Awake()
         {
@@ -18,10 +18,10 @@ namespace GameAssembly.ScoresSystem
 
         private void OnDestroy() => Expose();
 
-        private void Redraw() => scoreText.text = _scores.ScoresCount.ToString();
+        private void Redraw() => scoreText.text = _score.ScoresCount.ToString();
 
-        private void Bind() => _scores.OnScoresChanged += Redraw;
+        private void Bind() => _score.OnScoresChanged += Redraw;
 
-        private void Expose() => _scores.OnScoresChanged -= Redraw;
+        private void Expose() => _score.OnScoresChanged -= Redraw;
     }
 }
