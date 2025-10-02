@@ -1,0 +1,91 @@
+# .github/workflows/webgl-pages.yml
+name: Build WebGL and Publish to GitHub Pages
+
+on:
+  push:
+    branches: [ build-test ] #здесь указываем, при пуше в какую ветку приватного репо запускать пайплайн
+  workflow_dispatch:
+
+concurrency:
+  group: webgl-pages
+  cancel-in-progress: true
+
+jobs:
+  build-webgl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      # 1 этап: забираем код
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          lfs: false
+
+      # 2 этап: освобождаем место на раннере (иначе часто ENOSPC/exit 125 - может быть даже с маленьким билдом)
+      - name: Free disk space (Ubuntu)
+        uses: jlumbroso/free-disk-space@main
+        with:
+          tool-cache: true
+          android: true
+          dotnet: true
+          haskell: true
+          large-packages: true
+          docker-images: true
+          swap-storage: true
+
+      # 3 этап: кэшируем Library, чтобы ускорить повторные сборки
+      - name: Cache Unity Library
+        uses: actions/cache@v3
+        with:
+          path: Library
+          key: Library-${{ hashFiles('Assets/**','Packages/**','ProjectSettings/**') }}
+          restore-keys: |
+            Library-
+
+      # 4 этап: сборка WebGL (Unity версию возьмёт из ProjectSettings/ProjectVersion.txt автоматически)
+      - name: Build WebGL
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }} #название секрета вашего репозитория с содержимым .ulf
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }} #название секрета вашего репозитория с вашей почтой для Unity
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }} #название секрета вашего репозитория с вашим паролем от Unity
+        with:
+          targetPlatform: WebGL
+          # unityVersion: не задаём: возьмется из ProjectVersion.txt
+          # buildName: по умолчанию 'WebGL'
+          # output: по умолчанию 'build'
+      
+      # 5 этап: складываем готовое содержимое build/WebGL в dist (корень целевой ветки gh-pages)
+      - name: Prepare dist (root of gh-pages)
+        run: |
+          rm -rf dist && mkdir -p dist
+
+          # если есть build/WebGL, попробуем найти реальную папку с index.html (в ней и лежит итоговый билд)
+          if [ -d build/WebGL ]; then
+            inner=$(find build/WebGL -maxdepth 3 -type f -name index.html -printf '%h\n' | head -n1)
+            if [ -n "$inner" ]; then
+              echo "Detected inner build folder: $inner — copying its CONTENTS to dist/"
+              rsync -a --delete "$inner/" "dist/"
+            else
+              echo "No index.html found under build/WebGL — copying build/WebGL/ contents to dist/"
+              rsync -a --delete "build/WebGL/" "dist/"
+            fi
+          else
+            # fallback — если структура неожиданная, копируем всё из build/
+            echo "build/WebGL not found — copying build/ to dist/"
+            rsync -a --delete "build/" "dist/"
+          fi
+
+          touch dist/.nojekyll
+          echo "dist content:"
+          find dist -maxdepth 2 -type f -printf "%P\n" | sort
+
+      # 6 этап: публикация в публичный репозиторий (ветка gh-pages, КОРЕНЬ)
+      - name: Deploy to GitHub Pages repo
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          publish_dir: dist
+          publish_branch: app #вставьте название вашей целевой ветки для билда в публичном репо
+          force_orphan: true
