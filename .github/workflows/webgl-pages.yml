@@ -40,7 +40,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: Library
-          key: Library-${{ hashFiles('Assets/**','Packages/**','ProjectSettings/**') }}
+          key: Library-${{ hashFiles('KT1/Assets/**','KT1/Packages/**','KT1/ProjectSettings/**') }}
           restore-keys: |
             Library-
 
