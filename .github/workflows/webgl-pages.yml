@@ -3,7 +3,7 @@ name: Build WebGL and Publish to GitHub Pages
 
 on:
   push:
-    branches: [ build-test ] #здесь указываем, при пуше в какую ветку приватного репо запускать пайплайн
+    branches: [ build-test ] #здесь указываем, при пуше в какую ветку приватного репо запускать пайплайн.
   workflow_dispatch:
 
 concurrency:
