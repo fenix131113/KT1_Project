@@ -87,6 +87,7 @@ jobs:
       - name: Deploy to GitHub Pages repo
         uses: peaceiris/actions-gh-pages@v4
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist
           publish_branch: app #вставьте название вашей целевой ветки для билда в публичном репо
           force_orphan: true
