@@ -1,4 +1,5 @@
 ﻿using System;
+using GameAnalyticsSDK;
 using VContainer;
 using VContainer.Unity;
 
@@ -25,6 +26,9 @@ namespace GameAssembly.PlayerSystem
         {
             if (_playerInput.Player.Jump.IsPressed())
                 OnHoldJump?.Invoke();
+            
+            if(_playerInput.Player.Debug.IsPressed())
+                GameAnalytics.NewErrorEvent(GAErrorSeverity.Debug, "Test Error Event Message");
         }
 
         public void Initialize() => _playerInput.Player.Enable();

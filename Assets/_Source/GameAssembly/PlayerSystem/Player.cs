@@ -1,3 +1,4 @@
+using GameAnalyticsSDK;
 using GameAssembly.Core;
 using GameAssembly.Core.Data;
 using GameAssembly.Game;
@@ -11,7 +12,8 @@ namespace GameAssembly.PlayerSystem
     {
         [SerializeField] private Rigidbody2D rb;
         [SerializeField] private float jumpForce = 2f;
-        
+        [SerializeField] private LayerMask wallsLayer;
+
         [Inject] private PlayerInput _playerInput;
         [Inject] private GameRestart _gameRestart;
         [Inject] private LayersDataSO _layersDataSO;
@@ -25,15 +27,23 @@ namespace GameAssembly.PlayerSystem
             rb.AddForce(Vector2.up * (jumpForce * Time.deltaTime), ForceMode2D.Force);
         }
 
-        private void Death() => _gameRestart.RestartGame();
+        private void Death()
+        {
+            _gameRestart.RestartGame();
+        }
 
         public void StartPlayer() => rb.bodyType = RigidbodyType2D.Dynamic;
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if(!LayerService.CheckLayersEquality(other.gameObject.layer, _layersDataSO.PlayerDeadLayer))
+            if (!LayerService.CheckLayersEquality(other.gameObject.layer, _layersDataSO.PlayerDeadLayer))
                 return;
-            
+
+            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail,
+                LayerService.CheckLayersEquality(other.gameObject.layer, wallsLayer)
+                    ? "Dead by wall"
+                    : "Dead by enemy");
+
             Death();
         }
     }

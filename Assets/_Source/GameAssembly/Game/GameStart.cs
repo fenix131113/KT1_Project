@@ -1,4 +1,5 @@
-﻿using GameAssembly.EnemySystem;
+﻿using GameAnalyticsSDK;
+using GameAssembly.EnemySystem;
 using GameAssembly.Level;
 using GameAssembly.PlayerSystem;
 using GameAssembly.ScoresSystem;
@@ -22,6 +23,8 @@ namespace GameAssembly.Game
         private void StartGame()
         {
             _playerInput.UnregisterJumpHoldCallback(StartGame);
+            
+            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "Start Game");
             
             inputHint.SetActive(false);
             _player.StartPlayer();

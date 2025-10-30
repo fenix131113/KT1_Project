@@ -1,4 +1,5 @@
-﻿using GameAssembly.Core.Data;
+﻿using GameAnalyticsSDK;
+using GameAssembly.Core.Data;
 using GameAssembly.Level;
 using GameAssembly.Services;
 using UnityEngine;
@@ -30,6 +31,7 @@ namespace GameAssembly.ScoresSystem
 
         private void Collect()
         {
+            GameAnalytics.NewDesignEvent("coin:collect");
             _score.AddScore();
             Destroy(gameObject);
         }
