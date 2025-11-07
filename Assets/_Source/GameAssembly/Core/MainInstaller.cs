@@ -12,6 +12,7 @@ namespace GameAssembly.Core
     public class MainInstaller : LifetimeScope
     {
         [SerializeField] private LayersDataSO layersDataSO;
+
         protected override void Configure(IContainerBuilder builder)
         {
             #region Core
@@ -19,7 +20,7 @@ namespace GameAssembly.Core
             builder.RegisterInstance(layersDataSO).As<LayersDataSO>();
 
             #endregion
-            
+
             #region Player
 
             builder.RegisterComponentInHierarchy<Player>();
@@ -31,10 +32,13 @@ namespace GameAssembly.Core
                 .As<ITickable>();
 
             #endregion
+
             #region Game
-            
+
             builder.Register<GameRestart>(Lifetime.Singleton);
-            builder.Register<Score>(Lifetime.Singleton);
+            builder.Register<Score>(Lifetime.Singleton)
+                .As<IInitializable>()
+                .AsSelf();
             builder.RegisterComponentInHierarchy<EnemySpawner>();
             builder.RegisterComponentInHierarchy<ScoresSpawner>();
 

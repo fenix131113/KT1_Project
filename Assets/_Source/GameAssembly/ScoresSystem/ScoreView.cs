@@ -13,6 +13,10 @@ namespace GameAssembly.ScoresSystem
         private void Awake()
         {
             Bind();
+        }
+
+        private void Start()
+        {
             Redraw();
         }
 
