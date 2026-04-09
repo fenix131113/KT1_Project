@@ -1,12 +1,14 @@
-﻿using System;
+using System;
+using GameAssembly.ReplaySystem;
 using VContainer;
 using VContainer.Unity;
 
 namespace GameAssembly.PlayerSystem
 {
-    public class PlayerInput : IInitializable, ITickable
+    public class PlayerInput : IInitializable, IFixedTickable
     {
         [Inject] private InputSystem_Actions _playerInput;
+        [Inject] private ReplayController _replayController;
 
         public event Action OnHoldJump;
 
@@ -19,16 +21,30 @@ namespace GameAssembly.PlayerSystem
         public void UnregisterJumpHoldCallback(Action callback) =>
             OnHoldJump -= callback;
 
-        ~PlayerInput() => Expose();
-
-        public void Tick()
+        public void FixedTick()
         {
-            if (_playerInput.Player.Jump.IsPressed())
-                OnHoldJump?.Invoke();
+            if (_replayController.IsPlayback)
+                return;
+
+            if (!_playerInput.Player.Jump.IsPressed())
+                return;
+
+            OnHoldJump?.Invoke();
+            _replayController.RecordCommand(ReplayCommand.JumpHold(_replayController.CurrentTick, true));
         }
 
-        public void Initialize() => _playerInput.Player.Enable();
+        public void Initialize()
+        {
+            _playerInput.Player.Enable();
+            _replayController.OnPlaybackCommand += HandlePlaybackCommand;
+        }
 
-        private void Expose() => OnHoldJump = null;
+        private void HandlePlaybackCommand(ReplayCommand command)
+        {
+            if (command.type != ReplayCommandType.JUMP_HOLD || !command.boolValue)
+                return;
+
+            OnHoldJump?.Invoke();
+        }
     }
 }

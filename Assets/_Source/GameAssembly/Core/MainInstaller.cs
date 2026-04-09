@@ -2,6 +2,7 @@ using GameAssembly.Core.Data;
 using GameAssembly.EnemySystem;
 using GameAssembly.Game;
 using GameAssembly.PlayerSystem;
+using GameAssembly.ReplaySystem;
 using GameAssembly.ScoresSystem;
 using UnityEngine;
 using VContainer;
@@ -12,11 +13,26 @@ namespace GameAssembly.Core
     public class MainInstaller : LifetimeScope
     {
         [SerializeField] private LayersDataSO layersDataSO;
+
+        private InputSystem_Actions _playerInput;
+        
         protected override void Configure(IContainerBuilder builder)
         {
             #region Core
 
             builder.RegisterInstance(layersDataSO).As<LayersDataSO>();
+            builder.Register<ReplayClock>(Lifetime.Singleton)
+                .AsSelf()
+                .As<IFixedTickable>();
+            builder.Register<DeterministicRng>(Lifetime.Singleton)
+                .As<IRng>();
+            builder.Register<ReplayController>(Lifetime.Singleton)
+                .AsSelf()
+                .As<IInitializable>()
+                .As<IFixedTickable>();
+            builder.Register<ReplayHotkeys>(Lifetime.Singleton)
+                .As<IInitializable>()
+                .As<ITickable>();
 
             #endregion
             
@@ -24,11 +40,12 @@ namespace GameAssembly.Core
 
             builder.RegisterComponentInHierarchy<Player>();
             builder.RegisterComponentInHierarchy<Player>().As<IPositionGetter>();
-            builder.Register<InputSystem_Actions>(Lifetime.Singleton);
+            _playerInput = new InputSystem_Actions();
+            builder.RegisterInstance(_playerInput);
             builder.Register<PlayerInput>(Lifetime.Singleton)
                 .AsSelf()
                 .As<IInitializable>()
-                .As<ITickable>();
+                .As<IFixedTickable>();
 
             #endregion
             #region Game

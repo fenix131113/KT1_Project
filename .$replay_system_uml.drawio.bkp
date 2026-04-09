@@ -1,0 +1,121 @@
+<mxfile host="app.diagrams.net" modified="2026-04-06T19:55:00.000Z" agent="Codex" version="26.0.0" type="device">
+  <diagram id="replay-uml" name="Replay UML">
+    <mxGraphModel dx="1600" dy="980" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="c1" value="MainInstaller&#xa;------------------------------&#xa;+ Configure(builder) : void&#xa;&#xa;Registers:&#xa;- ReplayClock&#xa;- DeterministicRng as IRng&#xa;- ReplayController&#xa;- ReplayHotkeys&#xa;- PlayerInput" style="shape=umlClass;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="280" height="180" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c2" value="ReplayClock&#xa;------------------------------&#xa;+ TICK_RATE : int = 50&#xa;+ CurrentTick : int&#xa;+ FixedTick() : void&#xa;+ Reset() : void" style="shape=umlClass;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="260" height="150" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c3" value="&lt;&lt;interface&gt;&gt;&#xa;IRng&#xa;------------------------------&#xa;+ Reset(seed:int) : void&#xa;+ NextFloat(min:float,max:float) : float" style="shape=umlClass;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="360" y="240" width="280" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c4" value="DeterministicRng&#xa;------------------------------&#xa;- _state : uint&#xa;+ Reset(seed:int) : void&#xa;+ NextFloat(min:float,max:float) : float" style="shape=umlClass;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="360" y="410" width="300" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c5" value="ReplayController&#xa;------------------------------&#xa;+ CurrentTick : int&#xa;+ IsRecording : bool&#xa;+ IsPlayback : bool&#xa;+ StartRecording() : void&#xa;+ StopRecording() : void&#xa;+ PlayLastReplay() : void&#xa;+ SaveLastReplayToFile(fileName?) : string&#xa;+ LoadReplayFromFile(path) : bool&#xa;+ LoadAndPlayLatestReplayFromFile() : bool&#xa;+ RecordCommand(command) : void&#xa;+ OnPlaybackCommand : event" style="shape=umlClass;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="700" y="40" width="420" height="280" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c6" value="ReplayHotkeys&#xa;------------------------------&#xa;+ Initialize() : void&#xa;+ Tick() : void&#xa;&#xa;Hotkeys:&#xa;F5 start&#xa;F6 stop&#xa;F7 play last&#xa;F8 save last&#xa;F9 load latest + play" style="shape=umlClass;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="40" width="300" height="220" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c7" value="PlayerInput&#xa;------------------------------&#xa;+ FixedTick() : void&#xa;+ Initialize() : void&#xa;+ OnHoldJump : event&#xa;&#xa;records: JUMP_HOLD&#xa;consumes playback commands" style="shape=umlClass;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="270" width="280" height="180" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c8" value="EnemySpawner&#xa;------------------------------&#xa;+ Spawn() : void&#xa;+ HandlePlaybackCommand() : void&#xa;&#xa;records: ENEMY_SPAWN" style="shape=umlClass;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="500" width="280" height="150" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c9" value="ScoresSpawner&#xa;------------------------------&#xa;+ Spawn() : void&#xa;+ HandlePlaybackCommand() : void&#xa;&#xa;records: SCORE_SPAWN" style="shape=umlClass;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="690" width="280" height="150" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c10" value="ReplayRuntimeStore&#xa;------------------------------&#xa;+ LastReplay : ReplayData&#xa;+ PendingPlaybackReplay : ReplayData" style="shape=umlClass;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="700" y="370" width="330" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c11" value="ReplayData&#xa;------------------------------&#xa;+ header : ReplayHeader&#xa;+ commands : List&lt;ReplayCommand&gt;&#xa;+ durationTicks : int" style="shape=umlClass;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="310" width="320" height="150" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c12" value="ReplayHeader&#xa;------------------------------&#xa;+ version : int&#xa;+ tickRate : int&#xa;+ seed : int&#xa;+ platform : string" style="shape=umlClass;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="290" width="280" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c13" value="ReplayCommand&#xa;------------------------------&#xa;+ tick : int&#xa;+ type : ReplayCommandType&#xa;+ boolValue : bool&#xa;+ floatValue : float&#xa;+ floatValue2 : float&#xa;+ intValue : int" style="shape=umlClass;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="500" width="320" height="190" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c14" value="&lt;&lt;enum&gt;&gt;&#xa;ReplayCommandType&#xa;------------------------------&#xa;+ JUMP_HOLD&#xa;+ ENEMY_SPAWN&#xa;+ SCORE_SPAWN" style="shape=umlClass;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="520" width="280" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" value="implements" style="endArrow=block;endFill=0;html=1;" edge="1" parent="1" source="c4" target="c3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="uses" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="1" source="c5" target="c2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="uses" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="1" source="c5" target="c3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="controls" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="1" source="c6" target="c5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" value="record + playback" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="1" source="c7" target="c5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" value="record + playback" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="1" source="c8" target="c5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" value="record + playback" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="1" source="c9" target="c5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e8" value="reads/writes" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="1" source="c5" target="c10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e9" value="records/plays" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="1" source="c5" target="c11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e10" value="1" style="startArrow=diamondThin;startFill=1;endArrow=none;html=1;" edge="1" parent="1" source="c11" target="c12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e11" value="1..*" style="startArrow=diamondThin;startFill=1;endArrow=none;html=1;" edge="1" parent="1" source="c11" target="c13">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e12" value="type" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="1" source="c13" target="c14">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e13" value="stores" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="1" source="c10" target="c11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e14" value="registers" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="1" source="c1" target="c2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e15" value="registers" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="1" source="c1" target="c4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e16" value="registers" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="1" source="c1" target="c5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e17" value="registers" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="1" source="c1" target="c6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e18" value="registers" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="1" source="c1" target="c7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

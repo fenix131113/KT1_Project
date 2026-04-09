@@ -1,0 +1,1659 @@
+{
+    "header": {
+        "version": 1,
+        "tickRate": 50,
+        "seed": 37358937,
+        "platform": "WindowsEditor"
+    },
+    "commands": [
+        {
+            "tick": 26,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 27,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 28,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 29,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 30,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 31,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 32,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 33,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 34,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 35,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 36,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 37,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 38,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 39,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 40,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 41,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 61,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 62,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 63,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 64,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 65,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 66,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 67,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 68,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 69,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 70,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 71,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 72,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 73,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 74,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 116,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 117,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 118,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 119,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 120,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 121,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 122,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 123,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 124,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 125,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 126,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 127,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 128,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 129,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 130,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 131,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 132,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 133,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 134,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 135,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 136,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 137,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 138,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 138,
+            "type": 1,
+            "boolValue": false,
+            "floatValue": 24.273983001708986,
+            "floatValue2": -1.2959060668945313,
+            "intValue": 0
+        },
+        {
+            "tick": 139,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 140,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 141,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 142,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 143,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 144,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 145,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 146,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 147,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 148,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 149,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 150,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 151,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 152,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 153,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 154,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 155,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 156,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 157,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 158,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 159,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 160,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 161,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 162,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 163,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 164,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 165,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 166,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 167,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 168,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 169,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 170,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 171,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 172,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 173,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 209,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 210,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 211,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 212,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 213,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 220,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 221,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 222,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 223,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 224,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 225,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 246,
+            "type": 2,
+            "boolValue": false,
+            "floatValue": 35.008689880371097,
+            "floatValue2": 0.09170540422201157,
+            "intValue": 0
+        },
+        {
+            "tick": 258,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 259,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 260,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 261,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 262,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 263,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 264,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 265,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 266,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 267,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 268,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 269,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 270,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 271,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 272,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 273,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 274,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 275,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 276,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 277,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 278,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 279,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 280,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 281,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 282,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 283,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 284,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 285,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 286,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 287,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 288,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 289,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 290,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 291,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 292,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 293,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 294,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 294,
+            "type": 1,
+            "boolValue": false,
+            "floatValue": 39.82661437988281,
+            "floatValue2": 1.0309849977493287,
+            "intValue": 0
+        },
+        {
+            "tick": 295,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 296,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 307,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 308,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 309,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 310,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 311,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 312,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 313,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 314,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 315,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 316,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 335,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 336,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 337,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 338,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 339,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 340,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 341,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 342,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 343,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 344,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 345,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 346,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 347,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 353,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 354,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 355,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 356,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 357,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 358,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 359,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 379,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 380,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 381,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 382,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 383,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 384,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 385,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 386,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 387,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 388,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 389,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 403,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 404,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 405,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 406,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 407,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 408,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 409,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 410,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 411,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 412,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 413,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 414,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 415,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 416,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 417,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 418,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 419,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 425,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 426,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 427,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 428,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 429,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 430,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        },
+        {
+            "tick": 431,
+            "type": 0,
+            "boolValue": true,
+            "floatValue": 0.0,
+            "floatValue2": 0.0,
+            "intValue": 0
+        }
+    ],
+    "durationTicks": 435
+}

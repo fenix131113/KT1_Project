@@ -1,7 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using GameAssembly.Core;
 using GameAssembly.Level.Data;
-using GameAssembly.PlayerSystem;
+using GameAssembly.ReplaySystem;
 using UnityEngine;
 using VContainer;
 
@@ -13,14 +13,31 @@ namespace GameAssembly.EnemySystem
         [SerializeField] private SpawnSettings spawnSettings;
 
         [Inject] private IPositionGetter _playerPosition;
+        [Inject] private IRng _rng;
+        [Inject] private ReplayController _replayController;
 
-        public void StartSpawn() => StartCoroutine(SpawnRoutine());
+        private bool _isSpawning;
 
-        private void SpawnEnemy()
+        private void Start() => _replayController.OnPlaybackCommand += HandlePlaybackCommand;
+
+        private void OnDestroy()
         {
-            Instantiate(enemyPrefab,
-                new Vector3(_playerPosition.GetPosition().x + spawnSettings.SpawnDistanceFromPlayer, Random.Range(spawnSettings.MinY, spawnSettings.MaxY), 0),
-                Quaternion.identity);
+            if (_replayController != null)
+                _replayController.OnPlaybackCommand -= HandlePlaybackCommand;
+        }
+
+        public void StartSpawn()
+        {
+            if (_replayController.IsPlayback || _isSpawning)
+                return;
+
+            _isSpawning = true;
+            StartCoroutine(SpawnRoutine());
+        }
+
+        private void SpawnEnemy(float x, float y)
+        {
+            Instantiate(enemyPrefab, new Vector3(x, y, 0), Quaternion.identity);
         }
 
         // ReSharper disable once IteratorNeverReturns
@@ -28,10 +45,22 @@ namespace GameAssembly.EnemySystem
         {
             while (true)
             {
-                yield return new WaitForSeconds(Random.Range(spawnSettings.MinTimeBetweenSpawn, spawnSettings.MaxTimeBetweenSpawn));
+                yield return new WaitForSeconds(_rng.Range(spawnSettings.MinTimeBetweenSpawn, spawnSettings.MaxTimeBetweenSpawn));
 
-                SpawnEnemy();
+                var spawnX = _playerPosition.GetPosition().x + spawnSettings.SpawnDistanceFromPlayer;
+                var spawnY = _rng.Range(spawnSettings.MinY, spawnSettings.MaxY);
+
+                SpawnEnemy(spawnX, spawnY);
+                _replayController.RecordCommand(ReplayCommand.EnemySpawn(_replayController.CurrentTick, spawnX, spawnY));
             }
+        }
+
+        private void HandlePlaybackCommand(ReplayCommand command)
+        {
+            if (command.type != ReplayCommandType.ENEMY_SPAWN)
+                return;
+
+            SpawnEnemy(command.floatValue, command.floatValue2);
         }
     }
 }
